@@ -21,6 +21,10 @@ The dashboard helps users understand EV trends, adoption, and data insights thro
 
 👉 https://shreyash272003.github.io/Visualization_tool_Electrical_vehicle_Tablue_project/
 
+## 🌐 Video Demo
+
+👉 
+
 ---
 
 ## ⚙️ How to Run the Project

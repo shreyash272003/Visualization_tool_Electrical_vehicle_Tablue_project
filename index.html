@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EV Charge & Range Analytics</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+</style>
+
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+<!-- Navbar -->
+
+<nav class="bg-black p-4 fixed w-full z-10">
+<div class="max-w-7xl mx-auto flex justify-between">
+
+<h1 class="text-xl font-bold text-purple-400">
+EV Analytics
+</h1>
+
+<div class="space-x-6">
+<a href="#about">About</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#story">Story</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="h-screen flex items-center justify-center text-center">
+
+<div>
+
+<h1 class="text-5xl font-bold mb-6">
+
+Visualization Tool for
+Electric Vehicle Charge and Range Analysis
+
+</h1>
+
+<p class="text-gray-300 mb-8">
+
+Analyze electric vehicle charging patterns, battery range,
+and adoption trends using interactive Tableau dashboards.
+
+</p>
+
+<a href="#dashboard"
+class="bg-purple-500 px-8 py-3 rounded-lg">
+
+View Analytics
+
+</a>
+
+</div>
+
+</section>
+
+<!-- About Section -->
+
+<section id="about" class="py-20 bg-gray-800">
+
+<div class="max-w-6xl mx-auto text-center">
+
+<h2 class="text-3xl font-bold mb-12">
+Project Workflow
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div>
+<h3 class="text-xl font-semibold mb-3">
+Data Collection
+</h3>
+<p class="text-gray-400">
+EV dataset collected from database sources including vehicle type,
+electric range, model year, and charging infrastructure.
+</p>
+</div>
+
+<div>
+<h3 class="text-xl font-semibold mb-3">
+Data Preparation
+</h3>
+<p class="text-gray-400">
+Cleaning and transforming raw data using SQL queries
+to prepare the dataset for analysis.
+</p>
+</div>
+
+<div>
+<h3 class="text-xl font-semibold mb-3">
+Data Visualization
+</h3>
+<p class="text-gray-400">
+Interactive dashboards created in Tableau to analyze
+EV trends and charging performance.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Dashboard Section -->
+
+<section id="dashboard" class="py-20">
+
+<h2 class="text-3xl text-center font-bold mb-10">
+EV Dashboard
+</h2>
+
+<div class="max-w-6xl mx-auto">
+
+<div class='tableauPlaceholder' id='viz1772913814925' style='position: relative'>
+
+<noscript>
+<a href='#'>
+<img alt='Dashboard'
+src='https://public.tableau.com/static/images/da/dashboard_17729121828490/Dashboard3/1_rss.png'
+style='border: none' />
+</a>
+</noscript>
+
+<object class='tableauViz' style='display:none;'>
+
+<param name='host_url' value='https://public.tableau.com/'/>
+<param name='embed_code_version' value='3'/>
+<param name='name' value='dashboard_17729121828490/Dashboard3'/>
+<param name='tabs' value='no'/>
+<param name='toolbar' value='yes'/>
+
+</object>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+var divElement=document.getElementById('viz1772913814925');
+var vizElement=divElement.getElementsByTagName('object')[0];
+
+vizElement.style.width='100%';
+vizElement.style.height='800px';
+
+var scriptElement=document.createElement('script');
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+
+vizElement.parentNode.insertBefore(scriptElement,vizElement);
+
+</script>
+
+<!-- Story Section -->
+
+<section id="story" class="py-20 bg-gray-800">
+
+<h2 class="text-3xl text-center font-bold mb-10">
+EV Story Insights
+</h2>
+
+<div class="max-w-6xl mx-auto">
+
+<div class='tableauPlaceholder' id='vizEVStory' style='position: relative'>
+
+<noscript>
+<a href='#'>
+<img alt='Story of Electric Cars in India'
+src='https://public.tableau.com/static/images/CW/CW2X9YZW3/1_rss.png'
+style='border:none'/>
+</a>
+</noscript>
+
+<object class='tableauViz' style='display:none;'>
+
+<param name='host_url' value='https://public.tableau.com/'/>
+<param name='embed_code_version' value='3'/>
+<param name='path' value='shared/CW2X9YZW3'/>
+<param name='toolbar' value='yes'/>
+
+</object>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+var divElement=document.getElementById('vizEVStory');
+var vizElement=divElement.getElementsByTagName('object')[0];
+
+vizElement.style.width='100%';
+vizElement.style.height='800px';
+
+var scriptElement=document.createElement('script');
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+
+vizElement.parentNode.insertBefore(scriptElement,vizElement);
+
+</script>
+
+<!-- Contact Section -->
+
+<section id="contact" class="py-20">
+
+<div class="max-w-xl mx-auto text-center">
+
+<h2 class="text-3xl font-bold mb-8">
+Contact
+</h2>
+
+<form class="space-y-4">
+
+<input
+type="text"
+placeholder="Name"
+class="w-full p-3 rounded bg-gray-800"/>
+
+<input
+type="email"
+placeholder="Email"
+class="w-full p-3 rounded bg-gray-800"/>
+
+<textarea
+placeholder="Message"
+class="w-full p-3 rounded bg-gray-800">
+</textarea>
+
+<button
+class="bg-purple-500 px-6 py-3 rounded">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-black p-6 text-center">
+
+<p>
+© 2025 EV Charge & Range Analytics
+</p>
+
+</footer>
+
+</body>
+</html>

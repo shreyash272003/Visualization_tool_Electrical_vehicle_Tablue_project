@@ -23,7 +23,7 @@ The dashboard helps users understand EV trends, adoption, and data insights thro
 
 ## 🌐 Video Demo
 
-👉 
+👉 https://youtu.be/ioUixM4ImG8?feature=shared
 
 ---
 
